@@ -3,6 +3,10 @@ plugins {
     id "messplugin"
 }
 
+messConfig {
+    classAndNative = ["com.test.jnidemo.MainActivity": "src/main/cpp/native-lib.c"]
+}
+
 android {
     namespace 'com.test.jnidemo'
     compileSdk 34
